@@ -1,0 +1,10 @@
+# Pillow dùng để dựng preview bố cục; PyQt6 dùng cho giao diện chính (Dark UI).
+Pillow>=10.0
+PyQt6>=6.5.0
+
+# Tuỳ chọn (không bắt buộc — code hiện tại không phụ thuộc vào chúng):
+# ffmpeg-python>=0.2.0   # wrapper gọi ffmpeg, nếu bạn muốn refactor sang API
+# moviepy>=1.0.3         # thay thế khi cần cắt/ghép phức tạp bằng Python
+# python-vlc>=3.0.0      # CHỈ để xem video NHÚNG trong tab Xem video (cần cài thêm VLC
+                         # Player bản 64-bit từ videolan.org). Không có nó thì
+                         # tool vẫn xem trước được bằng ffplay / trình phát mặc định.
